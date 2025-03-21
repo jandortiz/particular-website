@@ -1,0 +1,188 @@
+h1, h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #1f3b5f;
+}
+
+p {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 300;
+}
+
+.curriculum-pdf {
+    background-color: #4a6fa5;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: "Source Sans 3", sans-serif;
+    box-shadow: 3px 2px 2px #00A8CC;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.footer-img {
+    filter: invert(98%) sepia(7%) saturate(59%) hue-rotate(219deg) brightness(115%) contrast(91%);
+}
+
+.footer-img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+a:hover {
+    color: #00A8CC;
+}
+
+.curriculum-pdf:hover{
+    background-color: #00A8CC;
+    color: white;
+    box-shadow: 3px 3px 4px #4a6fa5;
+
+}
+
+
+.navbar-container {
+    
+    background-color: #4a6fa5;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+
+/* Container principal. */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 4px solid black; */
+}
+/* ********************** */
+
+
+/* Contenedor hero */
+.hero-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 4px solid black; */
+}
+
+/* .hero-image {
+    border: 3px solid yellowgreen;
+} */
+
+.hero-image > img {
+    margin-top: 30%;
+    margin-bottom: 30%;
+    border-radius: 50%;
+    /* border: 3px solid black; */
+    width: 250px;
+}
+
+.hero-description {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 15px;
+    /* height: 100px; */
+    width: 100%;
+    /* margin: 10px; */
+    /* border: 3px solid yellow; */
+    
+}
+
+/* .hero-title {
+    border: 3px solid rgb(0, 255, 225);
+} */
+
+/* ********************** */
+
+
+/* Contenedor proyectos */
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* border: 3px solid blue; */
+}
+
+.project-images {
+    display: flex;
+    overflow: scroll;
+    flex-wrap: nowrap;
+    width: 90%;
+    /* border: 3px solid red; */
+}
+
+.carrusel-img {
+    flex: 1 0 auto;
+    margin: 5px 10px;
+    width: 350px;
+}
+
+.carrusel-img:hover {
+    transform: scale(1.02);
+}
+
+
+
+/* ********************** */
+
+
+.contactme-container{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1%;
+    background-color: #f4f4f4;
+    /* border: 3px solid yellowgreen; */
+}
+
+.footer-container {
+    background-color: #4a6fa5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-img {
+    filter: invert(16%) sepia(60%) saturate(1043%) hue-rotate(182deg) brightness(91%) contrast(86%);
+}
+
+.contact-img:hover {
+    filter: invert(43%) sepia(90%) saturate(673%) hue-rotate(149deg) brightness(98%) contrast(101%);
+
+}
+
+
+.text {
+    font-size: 1.125rem;
+    width: 70%;
+    text-align: justify;
+    /* border: 3px solid blue; */
+    color: #1f3b5f;
+}
+
