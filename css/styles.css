@@ -40,7 +40,7 @@ a:hover {
 }
 
 .curriculum-pdf:hover{
-    background-color: #00A8CC;
+    background-color: rgba(0, 168, 204);
     color: white;
     box-shadow: 3px 3px 4px #4a6fa5;
 
