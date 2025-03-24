@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-    color: #00A8CC;
+    color: rgba(0, 168, 204);
 }
 
 .curriculum-pdf:hover{
