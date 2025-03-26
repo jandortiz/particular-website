@@ -166,10 +166,10 @@ a:hover {
 .project-item:hover .image-description {
     opacity: 1;
 }
-
 /* ********************** */
 
 
+/* Contenedor contáctame. */
 .contactme-container{
     display: flex;
     flex-flow: column wrap;
@@ -181,6 +181,19 @@ a:hover {
     /* border: 3px solid yellowgreen; */
 }
 
+.contact-img {
+  filter: invert(16%) sepia(60%) saturate(1043%) hue-rotate(182deg) brightness(91%) contrast(86%);
+}
+
+
+.contact-img:hover {
+  filter: invert(43%) sepia(90%) saturate(673%) hue-rotate(149deg) brightness(98%) contrast(101%);
+
+}
+/* ********************** */
+
+
+/* Contenedor footer. */
 .footer-container {
     background-color: #4a6fa5;
     display: flex;
