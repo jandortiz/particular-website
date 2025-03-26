@@ -25,16 +25,6 @@ a {
     color: white;
 }
 
-
-.footer-img {
-    filter: invert(98%) sepia(7%) saturate(59%) hue-rotate(219deg) brightness(115%) contrast(91%);
-}
-
-.footer-img:hover {
-    opacity: 0.5;
-    transform: scale(1.05);
-}
-
 a:hover {
     color: rgba(0, 168, 204);
 }
