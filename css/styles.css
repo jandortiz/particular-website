@@ -1,228 +1,533 @@
-h1, h2 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 2.5rem;
-    text-align: center;
-    color: #1f3b5f;
+/* ========================
+   Variables
+   ======================== */
+:root {
+  --color-primary: #1f3b5f;
+  --color-brand: #4a6fa5;
+  --color-accent: #00A8CC;
+  --color-bg-light: #f4f4f4;
+  --color-white: #ffffff;
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Source Sans 3", sans-serif;
+  --shadow-sm: 0 2px 8px rgba(31, 59, 95, 0.12);
+  --shadow-md: 0 6px 24px rgba(31, 59, 95, 0.18);
+  --radius: 8px;
+  --transition: 0.3s ease;
+}
+
+
+/* ========================
+   Reset
+   ======================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-primary);
+  background-color: var(--color-white);
+}
+
+
+/* ========================
+   Tipografía
+   ======================== */
+h1 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--color-primary);
+  position: relative;
+  display: inline-block;
+  padding-bottom: 14px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 3px;
+  background: var(--color-accent);
+  border-radius: 2px;
 }
 
 p {
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 300;
-}
-
-.curriculum-pdf {
-    background-color: #4a6fa5;
-    color: white;
-    border-radius: 5px;
-    padding: 15px;
-    font-family: "Source Sans 3", sans-serif;
-    box-shadow: 3px 2px 2px #00A8CC;
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.75;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    color: rgba(0, 168, 204);
-}
-
-.curriculum-pdf:hover{
-    background-color: rgba(0, 168, 204);
-    color: white;
-    box-shadow: 3px 3px 4px #4a6fa5;
-
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition);
 }
 
 
+/* ========================
+   Navbar
+   ======================== */
 .navbar-container {
-    
-    background-color: #4a6fa5;
-    color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-brand);
+  box-shadow: var(--shadow-sm);
 }
 
 .navbar {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 64px;
+}
+
+.navbar img {
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--color-white);
+  border-bottom-color: var(--color-accent);
 }
 
 
-
-/* Container principal. */
-.container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    /* border: 4px solid black; */
-}
-/* ********************** */
-
-
-/* Contenedor hero */
+/* ========================
+   Hero
+   ======================== */
 .hero-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    /* border: 4px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  padding: 5rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-/* .hero-image {
-    border: 3px solid yellowgreen;
-} */
-
-.hero-image > img {
-    margin-top: 30%;
-    margin-bottom: 30%;
-    border-radius: 50%;
-    /* border: 3px solid black; */
-    width: 250px;
+.hero-image img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--color-brand);
+  box-shadow: var(--shadow-md);
 }
 
 .hero-description {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    background-color: #f4f4f4;
-    padding: 15px;
-    /* height: 100px; */
-    width: 100%;
-    /* margin: 10px; */
-    /* border: 3px solid yellow; */
-    
+  flex: 1;
+  min-width: 280px;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-/* .hero-title {
-    border: 3px solid rgb(0, 255, 225);
-} */
+.hero-label {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-brand);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
 
-/* ********************** */
+.hero-text {
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.curriculum-pdf {
+  display: inline-block;
+  align-self: flex-start;
+  background-color: var(--color-brand);
+  color: var(--color-white);
+  border-radius: var(--radius);
+  padding: 12px 28px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.curriculum-pdf:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
 
 
-/* Contenedor proyectos */
+/* ========================
+   Secciones compartidas
+   ======================== */
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-subtitle {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  color: #555;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ========================
+   Proyectos
+   ======================== */
 .project-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    /* border: 3px solid blue; */
+  width: 100%;
+  padding: 5rem 2rem;
+  background-color: var(--color-bg-light);
 }
 
-.project-images {
-    display: flex;
-    overflow: scroll;
-    flex-wrap: nowrap;
-    width: 90%;
-    /* border: 3px solid red; */
+.project-container .section-header {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.carrusel-img {
-    flex: 1 0 auto;
-    margin: 5px 10px;
-    width: 350px;
+/* Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.project-item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Tarjeta */
+.project-card {
+  background: var(--color-white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow var(--transition), transform var(--transition);
 }
 
-.image-description {
-    position: absolute;
-    bottom: 10px;
-    background: rgba(0, 168, 204, 0.85);
-    color: white;
-    padding: 5px 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
-    width: 80%;
-    height: auto;
+.project-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-5px);
 }
 
-.project-item:hover .image-description {
-    opacity: 1;
+/* Portada */
+.card-thumb {
+  display: block;
+  height: 185px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
-/* ********************** */
+
+.card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .card-thumb img {
+  transform: scale(1.05);
+}
+
+/* Portadas con gradiente */
+.card-thumb--ai,
+.card-thumb--web,
+.card-thumb--warm,
+.card-thumb--data,
+.card-thumb--ml,
+.card-thumb--spotify,
+.card-thumb--leads,
+.card-thumb--code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-thumb--ai      { background: linear-gradient(135deg, #1f3b5f 0%, #4a6fa5 100%); }
+.card-thumb--web     { background: linear-gradient(135deg, #007ea7 0%, #1f3b5f 100%); }
+.card-thumb--warm    { background: linear-gradient(135deg, #b5451b 0%, #4a6fa5 100%); }
+.card-thumb--data    { background: linear-gradient(135deg, #2d6a4f 0%, #1f3b5f 100%); }
+.card-thumb--ml      { background: linear-gradient(135deg, #1f3b5f 0%, #00A8CC 100%); }
+.card-thumb--spotify { background: linear-gradient(135deg, #1a1a2e 0%, #1f3b5f 100%); }
+.card-thumb--leads   { background: linear-gradient(135deg, #1a6b4a 0%, #1f3b5f 100%); }
+.card-thumb--code    { background: linear-gradient(135deg, #1f3b5f 0%, #2c2c54 100%); }
+
+.card-thumb--ai span,
+.card-thumb--web span,
+.card-thumb--warm span,
+.card-thumb--data span,
+.card-thumb--ml span,
+.card-thumb--spotify span,
+.card-thumb--leads span,
+.card-thumb--code span {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.18);
+  letter-spacing: 0.15em;
+  user-select: none;
+}
+
+/* Cuerpo */
+.card-body {
+  padding: 1.1rem 1.25rem 0.75rem;
+  flex: 1;
+}
+
+.card-title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.45rem;
+}
+
+.card-desc {
+  font-size: 0.83rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Footer de tarjeta */
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 1.25rem;
+  border-top: 1px solid #efefef;
+}
+
+.card-tech {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.card-tech img {
+  display: block;
+  opacity: 0.85;
+}
+
+.card-tech-text {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #888;
+  letter-spacing: 0.02em;
+}
+
+.card-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-brand);
+  white-space: nowrap;
+  transition: color var(--transition);
+}
+
+.card-link img {
+  filter: invert(35%) sepia(28%) saturate(800%) hue-rotate(182deg) brightness(90%);
+}
+
+.card-link:hover {
+  color: var(--color-accent);
+}
 
 
-/* Contenedor contáctame. */
-.contactme-container{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 1%;
-    background-color: #f4f4f4;
-    /* border: 3px solid yellowgreen; */
+/* ========================
+   Contáctame
+   ======================== */
+.contactme-container {
+  width: 100%;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactme-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.875rem 2.25rem;
+  border: 2px solid var(--color-brand);
+  border-radius: var(--radius);
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.contact-link:hover {
+  background-color: var(--color-brand);
+  color: var(--color-white);
 }
 
 .contact-img {
   filter: invert(16%) sepia(60%) saturate(1043%) hue-rotate(182deg) brightness(91%) contrast(86%);
+  transition: filter var(--transition);
+}
+
+.contact-link:hover .contact-img {
+  filter: brightness(0) invert(1);
 }
 
 
-.contact-img:hover {
-  filter: invert(43%) sepia(90%) saturate(673%) hue-rotate(149deg) brightness(98%) contrast(101%);
-
-}
-/* ********************** */
-
-
-/* Contenedor footer. */
+/* ========================
+   Footer
+   ======================== */
 .footer-container {
-    background-color: #4a6fa5;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:center;
-    align-items:center;
-    width: 100%;
-    height: 110px;
-    /* border: 3px solid black; */
+  background-color: var(--color-brand);
+  width: 100%;
 }
 
-.footer-content a{
-    padding: 30px; 
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.footer-content p{
-  text-align: center; 
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: 300;
-  color: white;
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 .footer-img {
-  filter: invert(98%) sepia(7%) saturate(59%) hue-rotate(219deg) brightness(115%) contrast(91%);
+  display: block;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  transition: opacity var(--transition), transform var(--transition), filter var(--transition);
 }
 
 .footer-img:hover {
-  opacity: 0.5;
-  transform: scale(1.05);
+  opacity: 1;
+  transform: scale(1.15);
   filter: invert(43%) sepia(90%) saturate(673%) hue-rotate(149deg) brightness(98%) contrast(101%);
 }
-/* ********************** */
 
-
-.text {
-    font-size: 1.125rem;
-    width: 70%;
-    text-align: justify;
-    /* border: 3px solid blue; */
-    color: #1f3b5f;
+.footer-content p {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
 }
 
+
+/* ========================
+   Responsive
+   ======================== */
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.65rem; }
+
+  .navbar {
+    padding: 0 1.25rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 3.5rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .hero-description {
+    align-items: center;
+  }
+
+  .curriculum-pdf {
+    align-self: center;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-container,
+  .contactme-container {
+    padding: 3.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
