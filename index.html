@@ -4,192 +4,226 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
+    <meta name="description" content="Portafolio de Jefferson Andrés García Ortiz, profesional en análisis y modelado de datos.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
-    <!-- Estilos CSS. -->
     <link rel="stylesheet" href="./css/styles.css">
 
     <title>Jandortiz | Portafolio Web</title>
 
-    <!-- Favicon -->
     <link href="./imgs/jeff-logo.png" rel="icon" type="image/x-icon">
   </head>
 
   <body>
 
     <!-- Navbar -->
-    <div class="navbar-container">
+    <header class="navbar-container">
       <nav class="navbar">
-        <img src="./imgs/jeff-logo-background.png" width="50px" alt="Logo de marca personal" />
-        <a href="#sobre-mi"><p>¿Quién soy?</p></a>
-        <a href="#proyectos-personales"><p>Proyectos</p></a>
-        <a href="#"><p>Blog</p></a>
+        <img src="./imgs/jeff-logo-background.png" width="48px" alt="Logo de marca personal" />
+        <ul class="nav-links">
+          <li><a href="#sobre-mi">¿Quién soy?</a></li>
+          <li><a href="#proyectos-personales">Proyectos</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
       </nav>
-    </div>
+    </header>
 
-    <div class="container">
+    <main>
 
-    
-      <!-- Sección hero. -->
-      <div class="hero-container">
-
-        <!-- Sección foto. -->
+      <!-- Sección hero -->
+      <section class="hero-container" id="sobre-mi">
         <div class="hero-image">
-          <img src="./imgs/foto_jefferson.jpg" alt="Foto de perfil" />
+          <img src="./imgs/foto_jefferson.jpg" alt="Foto de perfil de Jefferson García" />
         </div>
-
-        <!-- Sección quién soy yo. -->
         <div class="hero-description">
-
-
-          <!-- Sección título. -->
-          <div class="hero-title" id="sobre-mi">
-            <h1>Soy Jefferson Andrés García Ortiz</h1>
-          </div>
-          
-          <!-- Sección presentación. -->
-          <div class="text">
-            <p>Profesional con experiencia en el análisis y modelado de datos, optimización de algoritmos predictivos e implementación de soluciones analíticas avanzadas para transformar datos en conocimiento estratégico. </p>
-          </div>
-
-          <!-- <button >Más sobre mí</button> -->
+          <span class="hero-label">Data Scientist & Analista de Datos</span>
+          <h1>Jefferson Andrés García Ortiz</h1>
+          <p class="hero-text">Profesional con experiencia en el análisis y modelado de datos, optimización de algoritmos predictivos e implementación de soluciones analíticas avanzadas para transformar datos en conocimiento estratégico.</p>
           <a href="https://github.com/jandortiz/curriculum-vitae/blob/curriculum-vitae-pdf/jeff-curriculum-es.pdf" class="curriculum-pdf" target="_blank">Más sobre mí</a>
         </div>
-
-        
-      </div>
-
-
-
-
+      </section>
 
       <!-- Sección proyectos personales -->
-      <div class="project-container">
-
-        <!-- Título. -->
-        <div class="project-title" id="proyectos-personales">
+      <section class="project-container" id="proyectos-personales">
+        <div class="section-header">
           <h2>Proyectos personales</h2>
+          <p class="section-subtitle">Trabajos y exploraciones personales realizadas hasta el momento.</p>
         </div>
 
-        <!-- Descripción proyectos. -->
-        <div class="text">
-          <p>Breve descripción de trabajos y exploraciones personales realizadas hasta el momento.</p>
-        </div>
-        
-        <!-- Imágenes de proyectos. -->
-        <div class="project-images">
+        <div class="project-grid">
 
-          <!-- Proyecto 5. -->
-          <div class="project-item">
-            <a href="https://github.com/jandortiz/uam_rag_agent" target="_blank">
-              <img class="carrusel-img" src="./imgs/tfm.png">
+          <!-- UAM RAG Agent -->
+          <article class="project-card">
+            <a href="https://github.com/jandortiz/uam-rag-agent" target="_blank" class="card-thumb card-thumb--ai">
+              <span>RAG</span>
             </a>
+            <div class="card-body">
+              <h3 class="card-title">UAM RAG Agent</h3>
+              <p class="card-desc">Sistema RAG desarrollado como TFM que responde preguntas sobre las materias del máster en Big Data de la UAM.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tech">
+                <span class="card-tech-text">Python · LlamaIndex · Groq · Streamlit · AWS</span>
+              </div>
+              <a href="https://github.com/jandortiz/uam-rag-agent" target="_blank" class="card-link">Ver →</a>
+            </div>
+          </article>
 
-            <p class="image-description">
-              <b>UAM RAG Agent:</b> realizado como proyecto final de TFM (Trabajo Fin de Máster) y el cual responde preguntas relacionadas con las materias del máster en Big Data y ciencia de datos en la Universidad Autónoma de Madrid. 
-              <img src="./imgs/python.png" width="20px"> 
-              <img src="./imgs/llama-index.jpeg" width="20px">
-              <img src="./imgs/groq-logo-black.svg" width="40px">
-              <img src="./imgs/mongodb-mark.png" width="10px">
-              <img src="./imgs/streamlit-logo.png" width="80px">
-              <img src="./imgs/aws-logo.svg" width="30px">
-            </p>
-          </div>
+          <!-- EMT Madrid Webapp -->
+          <article class="project-card">
+            <a href="https://github.com/jandortiz/EMT-Madrid-Webapp" target="_blank" class="card-thumb card-thumb--web">
+              <span>MAPS</span>
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">EMT Madrid Webapp</h3>
+              <p class="card-desc">Visualización en tiempo real de movilidad urbana de Madrid: BiciMAD y paradas EMT mediante mapas interactivos y mapas de calor.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tech">
+                <span class="card-tech-text">Python · Streamlit · Folium</span>
+              </div>
+              <a href="https://github.com/jandortiz/EMT-Madrid-Webapp" target="_blank" class="card-link">Ver →</a>
+            </div>
+          </article>
 
-          <!-- Proyecto 4. -->
-          <div class="project-item">
-              <a href="https://github.com/jandortiz/proyecto_calculadora" target="_blank">
-                  <img class="carrusel-img" src="./imgs/calculadora.png">
-              </a>
-              <p class="image-description">
-                <b>Calculadora:</b> desarrollada con el fin de emular la construcción y funcionalidades de una calculadora básica. <br />
-                <img src="./imgs/python.png" width="20px">
-              </p>
-          </div>
+          <!-- Jeff-Chef -->
+          <article class="project-card">
+            <a href="https://github.com/jandortiz/Jeff-Chef" target="_blank" class="card-thumb card-thumb--warm">
+              <span>CHEF</span>
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">Jeff-Chef</h3>
+              <p class="card-desc">Asistente de recetas españolas con inteligencia artificial, capaz de sugerir y explicar recetas en lenguaje natural.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tech">
+                <span class="card-tech-text">Python · Groq · LangChain</span>
+              </div>
+              <a href="https://github.com/jandortiz/Jeff-Chef" target="_blank" class="card-link">Ver →</a>
+            </div>
+          </article>
 
-          <!-- Proyecto 3. -->
-          <div class="project-item">
-              <a href="https://www.kaggle.com/code/jeffersongarciaor/eda-mascotas-de-compa-a-madrid/edit" target="_blank">
-                  <img class="carrusel-img" src="./imgs/perros_gatos.png">
-              </a>
-              <p class="image-description">
-                <b>EDA Mascotas en Madrid:</b> análisis realizado para correlacionar la información sobre las áreas caninas y el censo de animales domésticos por distrito en Madrid, España, con el objetivo de identificar posibles ubicaciones para abrir una tienda de mascotas. <br />
-                <img src="./imgs/pandas-logo.svg" width="60px">
-                <img src="./imgs/seaborn-logo.svg" width="30px">
-                <img src="./imgs/matplotlib-logo.svg" width="30px">
-              </p>
-          </div>
+          <!-- EDA Mascotas Madrid -->
+          <article class="project-card">
+            <a href="https://www.kaggle.com/code/jeffersongarciaor/eda-mascotas-de-compa-a-madrid/edit" target="_blank" class="card-thumb card-thumb--data">
+              <span>EDA</span>
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">EDA Mascotas en Madrid</h3>
+              <p class="card-desc">Análisis de áreas caninas y censo de animales por distrito para identificar ubicaciones estratégicas para una tienda de mascotas.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tech">
+                <span class="card-tech-text">Python · Pandas · Seaborn · Matplotlib</span>
+              </div>
+              <a href="https://www.kaggle.com/code/jeffersongarciaor/eda-mascotas-de-compa-a-madrid/edit" target="_blank" class="card-link">Ver →</a>
+            </div>
+          </article>
 
-          <!-- Proyecto 2. -->
-          <div class="project-item">
-              <a href="https://www.kaggle.com/code/jeffersongarciaor/californiahousingclustering" target="_blank">
-                  <img class="carrusel-img" src="./imgs/california_housing_cluster.png">
-              </a>
-              <p class="image-description">
-                <b>Clustering California Housing:</b> tiene como objetivo aplicar técnicas de clustering al conjunto de datos de viviendas en California para identificar patrones y segmentar áreas geográficas según características similares.
-                <img src="./imgs/pandas-logo.svg" width="60px">
-                <img src="./imgs/numpy-logo.svg" width="30px">
-                <img src="./imgs/seaborn-logo.svg" width="30px">
-                <img src="./imgs/matplotlib-logo.svg" width="30px">
-                <img src="./imgs/scikit-learn-logo.svg" width="30px">
-              </p>
-          </div>
+          <!-- California Housing Clustering -->
+          <article class="project-card">
+            <a href="https://www.kaggle.com/code/jeffersongarciaor/californiahousingclustering" target="_blank" class="card-thumb card-thumb--ml">
+              <span>ML</span>
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">Clustering California Housing</h3>
+              <p class="card-desc">Técnicas de clustering aplicadas al dataset de viviendas en California para segmentar áreas geográficas según características similares.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tech">
+                <span class="card-tech-text">Python · Pandas · NumPy · Scikit-learn</span>
+              </div>
+              <a href="https://www.kaggle.com/code/jeffersongarciaor/californiahousingclustering" target="_blank" class="card-link">Ver →</a>
+            </div>
+          </article>
 
-          <!-- Proyecto 1. -->
-          <div class="project-item">
-              <a href="https://www.kaggle.com/code/jeffersongarciaor/spotify-api-data-retrieving" target="_blank">
-                  <img class="carrusel-img" src="./imgs/spotify_data.png">
-              </a>
-              <p class="image-description">
-                <b>Spotify API Data Retrieval:</b>  el objetivo principal es acceder a información detallada sobre canciones, artistas, álbumes y listas de reproducción disponibles en la plataforma de Spotify para su posterior análisis. <br />
-                <img src="./imgs/pandas-logo.svg" width="60px">
-                <img src="./imgs/seaborn-logo.svg" width="30px">
-                <img src="./imgs/matplotlib-logo.svg" width="30px">
-                <img src="./imgs/spotify-icon.svg" width="30px">
-              </p>
-          </div>
+          <!-- Spotify API -->
+          <article class="project-card">
+            <a href="https://www.kaggle.com/code/jeffersongarciaor/spotify-api-data-retrieving" target="_blank" class="card-thumb card-thumb--spotify">
+              <span>API</span>
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">Spotify API Data Retrieval</h3>
+              <p class="card-desc">Extracción y análisis de información detallada sobre canciones, artistas, álbumes y playlists de Spotify mediante su API.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tech">
+                <span class="card-tech-text">Python · Pandas · Spotipy · Matplotlib</span>
+              </div>
+              <a href="https://www.kaggle.com/code/jeffersongarciaor/spotify-api-data-retrieving" target="_blank" class="card-link">Ver →</a>
+            </div>
+          </article>
+
+          <!-- JALT Leads Tracker -->
+          <article class="project-card">
+            <a href="https://github.com/jandortiz/jalt-Just-Another-Leads-Tracker" target="_blank" class="card-thumb card-thumb--leads">
+              <span>LEADS</span>
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">JALT — Leads Tracker</h3>
+              <p class="card-desc">Aplicación web para el seguimiento y gestión de leads comerciales, con interfaz limpia y funcionalidades de registro.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tech">
+                <span class="card-tech-text">HTML · CSS · JS</span>
+              </div>
+              <a href="https://github.com/jandortiz/jalt-Just-Another-Leads-Tracker" target="_blank" class="card-link">Ver →</a>
+            </div>
+          </article>
+
+          <!-- Basic Notebook -->
+          <article class="project-card">
+            <a href="https://github.com/jandortiz/basic_notebook" target="_blank" class="card-thumb card-thumb--code">
+              <span>GUI</span>
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">Basic Notebook</h3>
+              <p class="card-desc">Bloc de notas de escritorio creado con CustomTkinter y Tkinter, emulando las funcionalidades de un editor de texto básico.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-tech">
+                <span class="card-tech-text">Python · Tkinter · CustomTkinter</span>
+              </div>
+              <a href="https://github.com/jandortiz/basic_notebook" target="_blank" class="card-link">Ver →</a>
+            </div>
+          </article>
+
         </div>
+      </section>
 
-      </div>
-
-      <!-- Sección contáctame. -->
-      <div class="contactme-container">
-        
-        <!-- Sección título. -->
-        <div class="contactme-title">
+      <!-- Sección contáctame -->
+      <section class="contactme-container">
+        <div class="section-header">
           <h2>Contáctame</h2>
+          <p class="section-subtitle">Gran pasión por el aprendizaje, la adopción de nuevas tecnologías y la mejora constante, siempre buscando crecer y adaptarme en un mundo en constante evolución.</p>
         </div>
-        
-        <!-- Sección descripción de contacto. -->
-        <div class="text">
-          <p>Gran pasión por el aprendizaje, la adopción de nuevas tecnologías y la mejora constante, siempre buscando crecer y adaptarme en un mundo en constante evolución.</p>
+        <div class="contactme-links">
+          <a href="mailto:jandortiz1890@gmail.com" class="contact-link">
+            <img class="contact-img" src="./imgs/correo.png" width="36px" alt="Correo electrónico" />
+            <span>jandortiz1890@gmail.com</span>
+          </a>
         </div>
+      </section>
 
-        <!-- Sección para contactar. -->
-        <div class="contactme-image" >
-          <a href="mailto:jandortiz1890@gmail.com"><img class="contact-img" src="./imgs/correo.png" width="50px" alt="Imagen e-mail." /></a>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer-container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="https://github.com/jandortiz" target="_blank"><img class="footer-img" src="./imgs/github-mark.png" width="28px" alt="Github" /></a>
+          <a href="https://www.linkedin.com/in/jandortiz/" target="_blank"><img class="footer-img" src="./imgs/linkedin-mark.png" width="28px" alt="LinkedIn" /></a>
+          <a href="https://www.instagram.com/jeagarciaor?igsh=cW5keTY2MGV0eGZv&utm_source=qr" target="_blank"><img class="footer-img" src="./imgs/instagram-mark.png" width="28px" alt="Instagram" /></a>
         </div>
+        <p>Creado por jandortiz-dev &copy; <span id="year"></span></p>
       </div>
+    </footer>
 
-
-
-    
-
-      <!-- Pie de página. -->
-      <div class="footer-container">
-        <footer class="footer-content">
-          <a href="https://github.com/jandortiz" target="_blank"><img class="footer-img" src="./imgs/github-mark.png" width="30px" alt="Github logo" /></a>
-
-          <a href="https://www.linkedin.com/in/jandortiz/" target="_blank"><img class="footer-img" src="./imgs/linkedin-mark.png" width="30px" alt="Linkedin logo" /></a>
-
-          <a href="https://www.instagram.com/jeagarciaor?igsh=cW5keTY2MGV0eGZv&utm_source=qr" target="_blank"><img class="footer-img" src="./imgs/instagram-mark.png" width="30px" alt="Instagram logo" /></a>
-          <p>Creado por jandortiz-dev © 2025</p>
-        </footer>
-
-      </div>
-    </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
   </body>
 </html>
