@@ -1,7 +1,24 @@
-#   Web personal
+# jandortiz.dev — Portafolio Web
 
-Sitio Web personal donde he consolidado los distintos proyectos realizados y futuros, acá encontrarás links y demás información para saber más sobre mí.
+Sitio web personal que consolida mis proyectos, habilidades y formas de contacto. Funciona como tarjeta de presentación profesional orientada a análisis de datos, Python y desarrollo web.
 
-Ten presente que aún es un **sitio en desarrollo**, que iré actualizando basándome en los conocimientos obtenidos del curso 
+> Sitio en desarrollo continuo.
 
+## Tecnologías
 
+- HTML5 y CSS3 (sin frameworks)
+- Desplegado en GitHub Pages
+
+## Estructura
+
+```
+particular-website/
+├── index.html
+├── css/
+│   └── styles.css
+└── imgs/
+```
+
+## Despliegue
+
+El sitio se despliega automáticamente desde la rama `main` via GitHub Pages.
