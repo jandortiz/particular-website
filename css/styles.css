@@ -278,6 +278,7 @@ a {
 
 /* Portadas con gradiente */
 .card-thumb--re,
+.card-thumb--tracker,
 .card-thumb--tikeo,
 .card-thumb--game,
 .card-thumb--ai,
@@ -294,6 +295,7 @@ a {
 }
 
 .card-thumb--re      { background: linear-gradient(135deg, #571658 0%, #4a6fa5 100%); }
+.card-thumb--tracker { background: linear-gradient(135deg, #0d1117 0%, #2ea043 100%); }
 .card-thumb--tikeo   { background: linear-gradient(135deg, #0a3d62 0%, #00b894 100%); }
 .card-thumb--game    { background: linear-gradient(135deg, #1a1a2e 0%, #c0392b 100%); }
 .card-thumb--ai      { background: linear-gradient(135deg, #1f3b5f 0%, #4a6fa5 100%); }
@@ -306,6 +308,7 @@ a {
 .card-thumb--code    { background: linear-gradient(135deg, #1f3b5f 0%, #2c2c54 100%); }
 
 .card-thumb--re span,
+.card-thumb--tracker span,
 .card-thumb--tikeo span,
 .card-thumb--game span,
 .card-thumb--ai span,
