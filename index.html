@@ -4,12 +4,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio de Jefferson Andrés García Ortiz, profesional en análisis y modelado de datos.">
+    <meta name="description" content="Portafolio de Jefferson Ortiz (jandortiz), desarrollador de software con énfasis en herramientas de analítica de datos.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/styles.css">
 
@@ -21,282 +20,146 @@
   <body>
 
     <!-- Navbar -->
-    <header class="navbar-container">
-      <nav class="navbar">
-        <svg width="280" height="93" viewBox="0 0 280 93" xmlns="http://www.w3.org/2000/svg" aria-label="jandortiz.dev logo">
-          <!-- Matrix dots -->
-          <circle cx="8.68" cy="26.04" r="2" fill="rgba(255,255,255,0.18)" opacity="0.5"/>
-          <circle cx="17.92" cy="26.04" r="3.2" fill="#7df3ff" opacity="0.9"/>
-          <circle cx="27.16" cy="26.04" r="2" fill="rgba(255,255,255,0.18)" opacity="0.5"/>
-          <circle cx="36.40" cy="26.04" r="3.2" fill="#7df3ff" opacity="0.9"/>
-          <circle cx="45.64" cy="26.04" r="2" fill="rgba(255,255,255,0.18)" opacity="0.5"/>
-          <circle cx="8.68" cy="40.92" r="3.2" fill="#7df3ff" opacity="0.9"/>
-          <circle cx="17.92" cy="40.92" r="2" fill="rgba(255,255,255,0.18)" opacity="0.5"/>
-          <circle cx="27.16" cy="40.92" r="3.2" fill="#7df3ff" opacity="0.9"/>
-          <circle cx="36.40" cy="40.92" r="2" fill="rgba(255,255,255,0.18)" opacity="0.5"/>
-          <circle cx="45.64" cy="40.92" r="3.2" fill="#7df3ff" opacity="0.9"/>
-          <circle cx="8.68" cy="55.80" r="2" fill="rgba(255,255,255,0.18)" opacity="0.5"/>
-          <circle cx="17.92" cy="55.80" r="3.2" fill="#7df3ff" opacity="0.9"/>
-          <circle cx="27.16" cy="55.80" r="2" fill="rgba(255,255,255,0.18)" opacity="0.5"/>
-          <circle cx="36.40" cy="55.80" r="3.2" fill="#7df3ff" opacity="0.9"/>
-          <circle cx="45.64" cy="55.80" r="3.2" fill="#7df3ff" opacity="0.9"/>
-          <!-- Vertical separator -->
-          <line x1="36.40" y1="16.74" x2="36.40" y2="72.54" stroke="#7df3ff" stroke-width="1" opacity="0.35"/>
-          <!-- Main wordmark -->
-          <text x="46.20" y="51.15" dominant-baseline="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="39.1" fill="#ffffff" letter-spacing="1">jandortiz<tspan font-family="'JetBrains Mono', monospace" font-weight="600" font-size="24.2" fill="#7df3ff">.dev</tspan></text>
-          <!-- Scatter dots -->
-          <circle cx="190.40" cy="29.76" r="1.5" fill="#7df3ff" opacity="0.15"/>
-          <circle cx="201.60" cy="26.04" r="1.8" fill="#7df3ff" opacity="0.21"/>
-          <circle cx="196.00" cy="33.48" r="2.1" fill="#7df3ff" opacity="0.27"/>
-          <circle cx="207.20" cy="30.69" r="2.4" fill="#7df3ff" opacity="0.33"/>
-          <circle cx="187.60" cy="24.18" r="2.7" fill="#7df3ff" opacity="0.39"/>
-          <circle cx="210.00" cy="35.34" r="3.0" fill="#7df3ff" opacity="0.45"/>
-          <!-- Cursor blink -->
-          <rect x="229.60" y="39.06" width="5.04" height="20.46" rx="1" fill="#7df3ff" opacity="0.7">
-            <animate attributeName="opacity" values="0.7;0.1;0.7" dur="1.2s" repeatCount="indefinite"/>
-          </rect>
-          <!-- Subtitle -->
-          <text x="5.60" y="80.91" dominant-baseline="middle" font-family="'JetBrains Mono', monospace" font-weight="400" font-size="9.3" fill="rgba(180,240,255,0.6)" letter-spacing="4" textLength="229.60" lengthAdjust="spacing">ANALYTICS · PYTHON · WEB · AI</text>
-        </svg>
+    <header class="navbar wrap">
+      <a class="logo" href="#">jandortiz<span class="logo-suffix">.dev</span></a>
+      <nav>
         <ul class="nav-links">
           <li><a href="#sobre-mi">¿Quién soy?</a></li>
-          <li><a href="#proyectos-personales">Proyectos</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#">Ideas sueltas</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="wrap">
 
       <!-- Sección hero -->
-      <section class="hero-container" id="sobre-mi">
-        <div class="hero-image">
-          <img src="./imgs/foto_jefferson.jpg" alt="Foto de perfil de Jefferson García" />
+      <section class="hero" id="sobre-mi">
+        <div class="hero-avatar">
+          <img src="./imgs/foto_jefferson.jpg" alt="Foto de perfil de Jefferson Ortiz" />
         </div>
-        <div class="hero-description">
-          <!-- <span class="hero-label">Data Scientist & Analista de Datos</span> -->
-          <h1>Jefferson Andrés García Ortiz</h1>
-          <p class="hero-text">Profesional con experiencia en análisis y modelado de datos, especializado en desarrollo de soluciones analíticas orientadas a la toma de decisiones. Cuento con dominio de programación en Python (Pandas, NumPy, Scikit-learn) y SQL para el procesamiento y explotación de datos a gran escala. También tengo conocimiento en desarrollo web básico  y construcción de aplicaciones analíticas que facilitan la transformación de datos en productos digitales y conocimiento estratégico.</p>
-
-          <a href="https://github.com/jandortiz/curriculum-vitae/blob/curriculum-vitae-pdf/jeff-curriculum-es.pdf" class="curriculum-pdf" target="_blank">Más sobre mí</a>
+        <p class="hero-kicker">// python · analytics · web</p>
+        <h1 class="hero-title">Jefferson <span class="mark">Ortiz</span></h1>
+        <p class="hero-handle">jandortiz</p>
+        <p class="hero-text">Desarrollador de software con énfasis en <span class="mark mark--soft">herramientas de analítica de datos</span>.</p>
+        <div class="hero-actions">
+          <a href="https://github.com/jandortiz/curriculum-vitae/blob/curriculum-vitae-pdf/jeff-curriculum-es.pdf" class="btn btn--primary" target="_blank" rel="noopener">Más sobre mí</a>
         </div>
       </section>
 
-      <!-- Sección proyectos personales -->
-      <section class="project-container" id="proyectos-personales">
-        <div class="section-header">
-          <h2>Proyectos</h2>
-          <p class="section-subtitle">Exploraciones personales realizadas hasta el momento.</p>
+      <!-- Fila de chips (stack) -->
+      <section class="skills" aria-label="Tecnologías principales">
+        <span class="chip chip--featured">Python</span>
+        <span class="chip">FastAPI</span>
+        <span class="chip">SQL</span>
+        <span class="chip">JavaScript</span>
+      </section>
+
+      <!-- Sección proyectos (carrusel) -->
+      <section class="projects" id="proyectos">
+        <div class="projects-header">
+          <div>
+            <h2>Proyectos</h2>
+            <p class="projects-subtitle">Exploraciones personales realizadas hasta el momento.</p>
+          </div>
+          <span class="projects-hint" aria-hidden="true">desliza →</span>
         </div>
 
-        <div class="project-grid">
+        <div class="carousel">
 
           <!-- Task Tracker -->
-          <article class="project-card">
-            <a href="https://task-tracker.jandortiz.com/" target="_blank" class="card-thumb card-thumb--tracker">
-              <span>TASKS</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">Task Tracker</h3>
-              <p class="card-desc">Aplicación full-stack para registrar tareas y hábitos en una cuadrícula anual estilo GitHub contributions, con autenticación, recuperación de contraseña y sincronización entre dispositivos vía API.</p>
-            </div>
-            <div class="card-footer">
-              <div class="card-tech">
-                <span class="card-tech-text">Python · FastAPI · PostgreSQL · JS · Docker</span>
-              </div>
-              <a href="https://task-tracker.jandortiz.com/" target="_blank" class="card-link">Ver →</a>
-            </div>
-          </article>
+          <a class="project-card" href="https://task-tracker.jandortiz.com/" target="_blank" rel="noopener">
+            <p class="card-tag">TASKS</p>
+            <h3 class="card-title">Task Tracker</h3>
+            <p class="card-desc">Cuadrícula anual de hábitos full-stack con auth y sincronización vía API.</p>
+            <p class="card-stack">FastAPI · PostgreSQL · Docker</p>
+          </a>
 
-          <!-- Tikeo Bot -->
-          <article class="project-card">
-            <a href="https://web.telegram.org/k/#@tikeo_dev_bot" target="_blank" class="card-thumb card-thumb--tikeo">
-              <span>TIKEO</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">Tikeo — Bot de Finanzas</h3>
-              <p class="card-desc">Bot conversacional de finanzas personales para Telegram con dashboard PWA, construido con FastAPI, Celery, PostgreSQL y APIs de IA (Whisper, GPT, PaddleOCR), desplegado con Docker en infraestructura EU.</p>
-            </div>
-            <div class="card-footer">
-              <div class="card-tech">
-                <span class="card-tech-text">FastAPI · Celery · PostgreSQL · Docker · AI</span>
-              </div>
-              <a href="https://web.telegram.org/k/#@tikeo_dev_bot" target="_blank" class="card-link">Ver →</a>
-            </div>
-          </article>
-
-          <!-- The HangMan Game-->
-          <article class="project-card">
-            <a href="https://hangman-game.jandortiz.com/" target="_blank" class="card-thumb card-thumb--game">
-              <span>HangMan</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">Juego HangMan</h3>
-              <p class="card-desc">Juego del ahorcado basado en web y diseñado para practicar vocabulario en inglés mientras se refuerzan habilidades de desarrollo tanto en backend como en frontend.</p>
-            </div>
-            <div class="card-footer">
-              <div class="card-tech">
-                <span class="card-tech-text">Python · HTML · CSS  · JS</span>
-              </div>
-              <a href="https://github.com/jandortiz/the-hangman-game" target="_blank" class="card-link">Ver →</a>
-            </div>
-          </article>
-
-          <!-- RENFE Madrid-->
-          <article class="project-card">
-            <a href="https://renfe-madrid.jandortiz.com/" target="_blank" class="card-thumb card-thumb--re">
-              <span>RENFE</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">Renfe Madrid</h3>
-              <p class="card-desc">Mapa interactivo que muestra la posición de los trenes de Cercanías Madrid en tiempo real, con actualización automática cada 15 segundos.</p>
-            </div>
-            <div class="card-footer">
-              <div class="card-tech">
-                <span class="card-tech-text">Python · HTML · CSS  · JS</span>
-              </div>
-              <a href="https://github.com/jandortiz/renfe-trains-madrid" target="_blank" class="card-link">Ver →</a>
-            </div>
-          </article>
+          <!-- Tikeo -->
+          <a class="project-card" href="https://web.telegram.org/k/#@tikeo_dev_bot" target="_blank" rel="noopener">
+            <p class="card-tag">TIKEO</p>
+            <h3 class="card-title">Tikeo — Finanzas</h3>
+            <p class="card-desc">Bot de finanzas para Telegram con dashboard PWA e IA (Whisper, GPT, OCR).</p>
+            <p class="card-stack">Celery · Docker · AI</p>
+          </a>
 
           <!-- UAM RAG Agent -->
-          <article class="project-card">
-            <a href="https://github.com/jandortiz/uam-rag-agent" target="_blank" class="card-thumb card-thumb--ai">
-              <span>RAG</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">UAM RAG Agent</h3>
-              <p class="card-desc">Sistema RAG desarrollado como TFM que responde preguntas sobre las materias del máster en Big Data de la UAM.</p>
-            </div>
-            <div class="card-footer">
-              <div class="card-tech">
-                <span class="card-tech-text">Python · LlamaIndex · Groq · Streamlit · AWS</span>
-              </div>
-              <a href="https://github.com/jandortiz/uam-rag-agent" target="_blank" class="card-link">Ver →</a>
-            </div>
-          </article>
+          <a class="project-card" href="https://github.com/jandortiz/uam-rag-agent" target="_blank" rel="noopener">
+            <p class="card-tag">RAG</p>
+            <h3 class="card-title">UAM RAG Agent</h3>
+            <p class="card-desc">Sistema RAG (TFM) sobre las materias del máster en Big Data de la UAM.</p>
+            <p class="card-stack">LlamaIndex · Groq · AWS</p>
+          </a>
 
-          <!-- EMT Madrid Webapp -->
-          <article class="project-card">
-            <a href="https://github.com/jandortiz/EMT-Madrid-Webapp" target="_blank" class="card-thumb card-thumb--web">
-              <span>MAPS</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">EMT Madrid Movil-App</h3>
-              <p class="card-desc">Visualización en tiempo real de movilidad urbana de Madrid: BiciMAD y paradas EMT mediante mapas interactivos y mapas de calor.</p>
-            </div>
-            <div class="card-footer">
-              <div class="card-tech">
-                <span class="card-tech-text">Python · Streamlit · Folium</span>
-              </div>
-              <a href="https://github.com/jandortiz/EMT-Madrid-Webapp" target="_blank" class="card-link">Ver →</a>
-            </div>
-          </article>
+          <!-- Juego HangMan -->
+          <a class="project-card" href="https://github.com/jandortiz/the-hangman-game" target="_blank" rel="noopener">
+            <p class="card-tag">HANGMAN</p>
+            <h3 class="card-title">Juego HangMan</h3>
+            <p class="card-desc">Ahorcado web para practicar vocabulario en inglés reforzando back y front.</p>
+            <p class="card-stack">Python · HTML · CSS · JS</p>
+          </a>
+
+          <!-- Renfe Madrid -->
+          <a class="project-card" href="https://renfe-madrid.jandortiz.com/" target="_blank" rel="noopener">
+            <p class="card-tag">RENFE</p>
+            <h3 class="card-title">Renfe Madrid</h3>
+            <p class="card-desc">Mapa en tiempo real de Cercanías Madrid, con actualización cada 15 segundos.</p>
+            <p class="card-stack">Python · JS · Folium</p>
+          </a>
+
+          <!-- EMT Madrid -->
+          <a class="project-card" href="https://github.com/jandortiz/EMT-Madrid-Webapp" target="_blank" rel="noopener">
+            <p class="card-tag">MAPS</p>
+            <h3 class="card-title">EMT Madrid</h3>
+            <p class="card-desc">Movilidad urbana de Madrid: BiciMAD y paradas EMT en mapas de calor.</p>
+            <p class="card-stack">Python · Streamlit · Folium</p>
+          </a>
 
           <!-- Jeff-Chef -->
-          <article class="project-card">
-            <a href="https://jeff-chef.jandortiz.com/" target="_blank" class="card-thumb card-thumb--warm">
-              <span>CHEF</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">Jeff-Chef</h3>
-              <p class="card-desc">Asistente de recetas españolas con inteligencia artificial, capaz de sugerir y explicar recetas en lenguaje natural.</p>
-            </div>
-            <div class="card-footer">
-              <div class="card-tech">
-                <span class="card-tech-text">Python · Groq · LangChain</span>
-              </div>
-              <a href="https://github.com/jandortiz/Jeff-Chef" target="_blank" class="card-link">Ver →</a>
-            </div>
-          </article>
-
-          <!-- EDA Mascotas Madrid -->
-          <article class="project-card">
-            <a href="https://www.kaggle.com/code/jeffersongarciaor/eda-mascotas-de-compa-a-madrid/edit" target="_blank" class="card-thumb card-thumb--data">
-              <span>EDA</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">EDA Mascotas en Madrid</h3>
-              <p class="card-desc">Análisis de áreas caninas y censo de animales por distrito para identificar ubicaciones estratégicas para una tienda de mascotas.</p>
-            </div>
-            <div class="card-footer">
-              <div class="card-tech">
-                <span class="card-tech-text">Python · Pandas · Seaborn · Matplotlib</span>
-              </div>
-              <a href="https://www.kaggle.com/code/jeffersongarciaor/eda-mascotas-de-compa-a-madrid/edit" target="_blank" class="card-link">Ver →</a>
-            </div>
-          </article>
-
-          <!-- California Housing Clustering -->
-          <article class="project-card">
-            <a href="https://www.kaggle.com/code/jeffersongarciaor/californiahousingclustering" target="_blank" class="card-thumb card-thumb--ml">
-              <span>ML</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">Clustering California Housing</h3>
-              <p class="card-desc">Técnicas de clustering aplicadas al dataset de viviendas en California para segmentar áreas geográficas según características similares.</p>
-            </div>
-            <div class="card-footer">
-              <div class="card-tech">
-                <span class="card-tech-text">Python · Pandas · NumPy · Scikit-learn</span>
-              </div>
-              <a href="https://www.kaggle.com/code/jeffersongarciaor/californiahousingclustering" target="_blank" class="card-link">Ver →</a>
-            </div>
-          </article>
-
-          
-          <!-- JALT Leads Tracker -->
-          <article class="project-card">
-            <a href="https://github.com/jandortiz/jalt-Just-Another-Leads-Tracker" target="_blank" class="card-thumb card-thumb--leads">
-              <span>LEADS</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">JALT — Leads Tracker</h3>
-              <p class="card-desc">Aplicación web para el seguimiento y gestión de leads comerciales, con interfaz limpia y funcionalidades de registro.</p>
-            </div>
-            <div class="card-footer">
-              <div class="card-tech">
-                <span class="card-tech-text">HTML · CSS · JS</span>
-              </div>
-              <a href="https://github.com/jandortiz/jalt-Just-Another-Leads-Tracker" target="_blank" class="card-link">Ver →</a>
-            </div>
-          </article>
-
-
-
-        </div>
-      </section>
-
-      <!-- Sección contáctame -->
-      <section class="contactme-container">
-        <div class="section-header">
-          <h2>Contáctame</h2>
-          <p class="section-subtitle">Gran pasión por el aprendizaje, la adopción de nuevas tecnologías y la mejora constante, siempre buscando crecer y adaptarme en un mundo en constante evolución.</p>
-        </div>
-        <div class="contactme-links">
-          <a href="mailto:jandortiz1890@gmail.com" class="contact-link">
-            <img class="contact-img" src="./imgs/correo.png" width="36px" alt="Correo electrónico" />
-            <span>jandortiz1890@gmail.com</span>
+          <a class="project-card" href="https://github.com/jandortiz/Jeff-Chef" target="_blank" rel="noopener">
+            <p class="card-tag">CHEF</p>
+            <h3 class="card-title">Jeff-Chef</h3>
+            <p class="card-desc">Asistente de recetas españolas con IA en lenguaje natural.</p>
+            <p class="card-stack">Python · Groq · LangChain</p>
           </a>
+
+          <!-- EDA Mascotas -->
+          <a class="project-card" href="https://www.kaggle.com/code/jeffersongarciaor/eda-mascotas-de-compa-a-madrid" target="_blank" rel="noopener">
+            <p class="card-tag">EDA</p>
+            <h3 class="card-title">EDA Mascotas</h3>
+            <p class="card-desc">Análisis de áreas caninas y censo por distrito en Madrid.</p>
+            <p class="card-stack">Pandas · Seaborn · Matplotlib</p>
+          </a>
+
+          <!-- Clustering California -->
+          <a class="project-card" href="https://www.kaggle.com/code/jeffersongarciaor/californiahousingclustering" target="_blank" rel="noopener">
+            <p class="card-tag">ML</p>
+            <h3 class="card-title">Clustering California</h3>
+            <p class="card-desc">Clustering del dataset de viviendas de California para segmentar zonas.</p>
+            <p class="card-stack">Pandas · NumPy · Scikit-learn</p>
+          </a>
+
+          <!-- JALT Leads Tracker -->
+          <a class="project-card" href="https://github.com/jandortiz/jalt-Just-Another-Leads-Tracker" target="_blank" rel="noopener">
+            <p class="card-tag">LEADS</p>
+            <h3 class="card-title">JALT — Leads Tracker</h3>
+            <p class="card-desc">Seguimiento y gestión de leads comerciales con interfaz limpia.</p>
+            <p class="card-stack">HTML · CSS · JS</p>
+          </a>
+
         </div>
       </section>
 
     </main>
 
     <!-- Pie de página -->
-    <footer class="footer-container">
-      <div class="footer-content">
-        <div class="footer-links">
-          <a href="https://github.com/jandortiz" target="_blank"><img class="footer-img" src="./imgs/github-mark.png" width="28px" alt="Github" /></a>
-          <a href="https://www.linkedin.com/in/jandortiz/" target="_blank"><img class="footer-img" src="./imgs/linkedin-mark.png" width="28px" alt="LinkedIn" /></a>
-          <a href="https://www.instagram.com/jand_ortiz90/" target="_blank"><img class="footer-img" src="./imgs/instagram-mark.png" width="28px" alt="Instagram" /></a>
-        </div>
-        <p>Creado por jandortiz-dev &copy; <span id="year"></span></p>
+    <footer class="footer">
+      <div class="footer-content wrap">
+        <a href="mailto:jandortiz1890@gmail.com" aria-label="Correo electrónico"><img class="footer-icon" src="./imgs/correo.png" alt="Correo electrónico" /></a>
+        <a href="https://github.com/jandortiz" target="_blank" rel="noopener" aria-label="GitHub"><img class="footer-icon" src="./imgs/github-mark.png" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/jandortiz/" target="_blank" rel="noopener" aria-label="LinkedIn"><img class="footer-icon" src="./imgs/linkedin-mark.png" alt="LinkedIn" /></a>
+        <a href="https://www.instagram.com/jand_ortiz90/" target="_blank" rel="noopener" aria-label="Instagram"><img class="footer-icon" src="./imgs/instagram-mark.png" alt="Instagram" /></a>
       </div>
     </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
   </body>
 </html>
