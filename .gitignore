@@ -13,6 +13,12 @@ __pycache__/
 htmlcov/
 /notas
 
+# Guías y bitácora del trabajo con asistentes: viven en este equipo, como /notas.
+# Si se versionaran, GitHub Pages las publicaría en jandortiz.com.
+/AGENTS.md
+/CLAUDE.md
+/BITACORA.md
+
 # Comparadores, capturas, prototipos y diagnósticos locales
 .local/
 *.log
@@ -34,5 +40,6 @@ htmlcov/
 .DS_Store
 ._*
 
-# Se versionan HTML de publicación, fuentes, pruebas, uv.lock,
-# documentación y .vscode/settings.json (puerto compartido de Live Server).
+# Se versionan HTML de publicación, _portfolio/ (contenido, plantillas, generador y
+# pruebas: sin él no se pueden regenerar las páginas), fuentes, imágenes, uv.lock,
+# README, LICENSE y .vscode/settings.json (puerto compartido de Live Server).
