@@ -1,0 +1,663 @@
+{
+  "projects": [
+    {
+      "id": "aplica",
+      "name": "Aplica Jobs",
+      "group": "featured",
+      "categories": [
+        "apps",
+        "ai"
+      ],
+      "status": "beta",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Claude"
+      ],
+      "description": {
+        "es": "Un mismo CV no cuenta lo mismo para todas las ofertas. Aplica compara tu perfil con el puesto y prepara un PDF adaptado, sin volver a empezar de cero.",
+        "en": "Different jobs call for different parts of your experience. Aplica compares your CV with a job description and prepares a tailored PDF from the profile you already have."
+      },
+      "details": [
+        {
+          "heading": {
+            "es": "De la oferta al PDF",
+            "en": "From job description to PDF"
+          },
+          "body": {
+            "es": "El perfil se guarda para reutilizarlo entre candidaturas. La aplicación analiza el encaje con una oferta y genera el documento en segundo plano con Celery y ReportLab.",
+            "en": "A saved profile carries over between applications. The app checks it against a job description, then uses Celery and ReportLab to generate the document in the background."
+          }
+        },
+        {
+          "heading": {
+            "es": "Una decisión importante",
+            "en": "A deliberate choice"
+          },
+          "body": {
+            "es": "El análisis de encaje se corrige con reglas en código después de la respuesta del modelo. No todo se deja a criterio de la IA.",
+            "en": "Code applies rules to the model’s assessment of the match. The final assessment is not left entirely to the language model."
+          }
+        },
+        {
+          "heading": {
+            "es": "Hasta dónde llega",
+            "en": "Where it stands"
+          },
+          "body": {
+            "es": "Está publicada en aplicajobs.es, en pruebas cerradas: se entra con invitación. La oferta se pega como texto y todavía no se pueden comprar créditos en línea. Las capturas muestran la portada y sus ejemplos, no una candidatura real.",
+            "en": "It’s live at aplicajobs.es as a closed beta, so you need an invitation to sign up. Job descriptions are pasted in as text, and credits can’t be bought online yet. The images show the landing page and its sample content, not a real application."
+          }
+        }
+      ],
+      "links": [],
+      "images": [
+        {
+          "src": {
+            "es": "imgs/projects/aplica-live.jpg",
+            "en": "imgs/projects/aplica-live.jpg"
+          },
+          "alt": {
+            "es": "Portada de Aplica Jobs con un ejemplo de adaptación de CV",
+            "en": "Aplica Jobs landing page showing an example CV assessment"
+          },
+          "caption": {
+            "es": "Portada de aplicajobs.es, 21 de octubre de 2026 · el resultado mostrado es un ejemplo de la propia página.",
+            "en": "The aplicajobs.es landing page on 21 October 2026 · the assessment shown is the page’s sample content."
+          },
+          "link": "https://aplicajobs.es",
+          "width": 1440,
+          "height": 989
+        },
+        {
+          "src": {
+            "es": "imgs/projects/aplica-live-process.jpg",
+            "en": "imgs/projects/aplica-live-process.jpg"
+          },
+          "alt": {
+            "es": "Sección de la portada que explica los tres pasos de Aplica",
+            "en": "Landing page section explaining Aplica’s three steps"
+          },
+          "caption": {
+            "es": "Cómo funciona · captura de la portada publicada, no de una ejecución del backend.",
+            "en": "How it works · a capture of the live landing page, not a backend run."
+          },
+          "width": 1440,
+          "height": 989
+        }
+      ]
+    },
+    {
+      "id": "renfe",
+      "name": "Renfe Madrid",
+      "group": "featured",
+      "categories": [
+        "apps",
+        "data"
+      ],
+      "status": "demo",
+      "stack": [
+        "JavaScript",
+        "Leaflet",
+        "GTFS-RT"
+      ],
+      "description": {
+        "es": "Un mapa para ver dónde están los trenes de Cercanías de Madrid. Puedes filtrar por línea y consultar la información de cada tren.",
+        "en": "See where Madrid’s Cercanías trains are on a live map. Filter by line and select a train to see its details."
+      },
+      "details": [
+        {
+          "heading": {
+            "es": "Del dato al mapa",
+            "en": "From feed to map"
+          },
+          "body": {
+            "es": "Los datos de RENFE se convierten en marcadores sobre OpenStreetMap. El navegador consulta los feeds a través de funciones que actúan como intermediarias.",
+            "en": "RENFE’s data becomes markers on an OpenStreetMap map. Proxy functions sit between the browser and the train feeds."
+          }
+        },
+        {
+          "heading": {
+            "es": "Lo que depende de otros",
+            "en": "What it depends on"
+          },
+          "body": {
+            "es": "La información depende del servicio de RENFE. El mapa no es un planificador de rutas ni sustituye los avisos del operador.",
+            "en": "The map relies on RENFE’s data service. It does not plan routes or replace the operator’s travel updates."
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://renfe-madrid.jandortiz.com/",
+          "label": {
+            "es": "Abrir el mapa",
+            "en": "Open the map"
+          }
+        },
+        {
+          "href": "https://github.com/jandortiz/renfe-trains-madrid",
+          "label": {
+            "es": "Ver el código",
+            "en": "View the code"
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": {
+            "es": "imgs/projects/renfe.jpg",
+            "en": "imgs/projects/renfe.jpg"
+          },
+          "alt": {
+            "es": "Mapa de Madrid con trenes identificados por línea",
+            "en": "Madrid map with trains labelled by line"
+          },
+          "caption": {
+            "es": "Captura de la demo pública · 5 de octubre de 2026.",
+            "en": "Public demo captured on 5 October 2026."
+          },
+          "width": 1280,
+          "height": 720
+        }
+      ]
+    },
+    {
+      "id": "tikeo",
+      "name": "Tikeo",
+      "group": "featured",
+      "categories": [
+        "apps",
+        "ai"
+      ],
+      "status": "private",
+      "stack": [
+        "FastAPI",
+        "PostgreSQL",
+        "Celery",
+        "Telegram"
+      ],
+      "description": {
+        "es": "Apuntar un gasto sin salir de Telegram. Tikeo recibe texto, audios y fotos de tickets, y reúne los movimientos en un panel web.",
+        "en": "Record an expense without leaving Telegram. Tikeo accepts text, voice notes and receipt photos, and brings the transactions together in a web dashboard."
+      },
+      "details": [
+        {
+          "heading": {
+            "es": "Entrada distinta, mismo registro",
+            "en": "Different inputs, one record"
+          },
+          "body": {
+            "es": "La transcripción de audio y la lectura de tickets se procesan en tareas de fondo. Los movimientos se guardan en PostgreSQL y se consultan desde el panel.",
+            "en": "Voice transcription and receipt reading run as background tasks. Transactions are stored in PostgreSQL and displayed in the dashboard."
+          }
+        },
+        {
+          "heading": {
+            "es": "Alcance documentado",
+            "en": "Documented scope"
+          },
+          "body": {
+            "es": "El código es privado. El registro y el panel están documentados como implementados; presupuestos, detección de suscripciones e informes semanales quedaron descartados. No los presento como funciones disponibles.",
+            "en": "The code is private. Expense recording and the dashboard are documented as implemented. Budgets, subscription detection and weekly reports were dropped from the scope."
+          }
+        }
+      ],
+      "links": [],
+      "images": [
+        {
+          "src": {
+            "es": "imgs/projects/tikeo-es.svg",
+            "en": "imgs/projects/tikeo-en.svg"
+          },
+          "alt": {
+            "es": "Texto, audio o ticket enviado por Telegram; procesamiento en segundo plano y gastos reunidos en el panel web.",
+            "en": "Text, voice notes or receipts sent through Telegram, processed in the background and collected in a web dashboard."
+          },
+          "caption": {
+            "es": "Del mensaje al registro de gastos · esquema del funcionamiento documentado.",
+            "en": "From a message to an expense record · diagram of the documented workflow."
+          },
+          "width": 1200,
+          "height": 750
+        }
+      ]
+    },
+    {
+      "id": "flight-delay",
+      "name": "EU Flight Delay Predictor",
+      "group": "ongoing",
+      "categories": [
+        "data",
+        "ai"
+      ],
+      "status": "research",
+      "stack": [
+        "Python",
+        "pandas",
+        "Open-Meteo",
+        "Eurostat"
+      ],
+      "description": {
+        "es": "Estoy preparando los datos para estudiar cómo se propagan los retrasos entre aeropuertos europeos. El modelo vendrá después: primero hay que construir un conjunto de datos fiable.",
+        "en": "I’m assembling the data to study how flight delays spread between European airports. Modelling comes later; the first job is to build a dataset I can trust."
+      },
+      "details": [
+        {
+          "heading": {
+            "es": "Lo que existe hoy",
+            "en": "What exists today"
+          },
+          "body": {
+            "es": "Hay datos de contexto de meteorología y pasajeros, con validaciones todavía en curso. La adquisición de datos de vuelos está pendiente.",
+            "en": "Weather and passenger data are available, with validation still in progress. The flight data has not been acquired yet."
+          }
+        },
+        {
+          "heading": {
+            "es": "La pregunta pendiente",
+            "en": "The question ahead"
+          },
+          "body": {
+            "es": "El objetivo es comparar modelos tabulares con un Transformer que incorpore el contexto de otros vuelos. Todavía no hay un modelo entrenado, una API ni un dashboard.",
+            "en": "The aim is to compare tabular models with a Transformer that can use the context of other flights. There is no trained model, API or dashboard yet."
+          }
+        }
+      ],
+      "links": [],
+      "images": []
+    },
+    {
+      "id": "uam-rag",
+      "name": "UAM RAG Agent",
+      "group": "other",
+      "categories": [
+        "ai",
+        "data"
+      ],
+      "status": "academic",
+      "stack": [
+        "LlamaIndex",
+        "MongoDB",
+        "Groq",
+        "Streamlit"
+      ],
+      "description": {
+        "es": "Preguntar sobre los materiales del máster en lugar de buscar documento por documento. Mi TFM conecta una búsqueda vectorial con un modelo de lenguaje.",
+        "en": "A way to ask questions about course material without opening every document. For my master’s thesis, I connected vector search to a language model."
+      },
+      "details": [
+        {
+          "heading": {
+            "es": "Dar contexto a la respuesta",
+            "en": "Giving the answer some context"
+          },
+          "body": {
+            "es": "La pregunta se representa como un vector. MongoDB recupera diez fragmentos de los materiales del máster y Groq genera la respuesta usando ese contexto.",
+            "en": "The question becomes a vector. MongoDB retrieves ten excerpts from the course materials, and Groq uses them as context for the answer."
+          }
+        },
+        {
+          "heading": {
+            "es": "Lo que puedes revisar",
+            "en": "What you can inspect"
+          },
+          "body": {
+            "es": "El repositorio contiene la implementación y la interfaz en Streamlit. La demo falló al arrancar en la revisión del 5 de octubre de 2026; por eso muestro un esquema y enlazo al código.",
+            "en": "The repository includes the implementation and the Streamlit interface. The hosted demo failed to start when checked on 5 October 2026, so I have included a diagram and linked to the code."
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://github.com/jandortiz/uam-rag-agent",
+          "label": {
+            "es": "Explorar el repositorio",
+            "en": "Explore the repository"
+          }
+        }
+      ],
+      "images": [
+        {
+          "src": {
+            "es": "imgs/projects/rag-es.svg",
+            "en": "imgs/projects/rag-en.svg"
+          },
+          "alt": {
+            "es": "Pregunta, recuperación de diez fragmentos en MongoDB y respuesta con Groq",
+            "en": "A question, ten excerpts retrieved from MongoDB, and an answer from Groq"
+          },
+          "caption": {
+            "es": "Esquema basado en el código · no es una captura de la aplicación.",
+            "en": "Diagram based on the code · not an application screenshot."
+          },
+          "width": 1200,
+          "height": 675
+        }
+      ]
+    },
+    {
+      "id": "task-tracker",
+      "name": "Task Tracker",
+      "group": "other",
+      "categories": [
+        "apps"
+      ],
+      "status": "code",
+      "stack": [
+        "FastAPI",
+        "PostgreSQL",
+        "JavaScript"
+      ],
+      "description": {
+        "es": "Una cuadrícula anual para marcar los días en que cumples una tarea. Cada cuenta guarda su progreso en una base de datos para consultarlo desde otro dispositivo.",
+        "en": "An annual grid for marking the days you complete a task. Each account stores its progress in a database, so it can be opened on another device."
+      },
+      "details": [
+        {
+          "heading": {
+            "es": "Dónde vive el progreso",
+            "en": "Where progress lives"
+          },
+          "body": {
+            "es": "El navegador muestra la cuadrícula; una API FastAPI y PostgreSQL guardan los datos por cuenta. También se puede exportar e importar el progreso como JSON.",
+            "en": "The browser displays the grid, while FastAPI and PostgreSQL store progress for each account. Progress can also be exported and imported as JSON."
+          }
+        },
+        {
+          "heading": {
+            "es": "Acceso actual",
+            "en": "Current access"
+          },
+          "body": {
+            "es": "La antigua demo de Railway no está disponible. El enlace lleva al repositorio para consultar el proyecto.",
+            "en": "The former Railway demo is unavailable. The repository is linked so you can inspect the project."
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://github.com/jandortiz/task-tracker",
+          "label": {
+            "es": "Ver el código",
+            "en": "View the code"
+          }
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "hangman",
+      "name": "Hangman",
+      "group": "other",
+      "categories": [
+        "apps"
+      ],
+      "status": "code",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "JavaScript"
+      ],
+      "description": {
+        "es": "El ahorcado de siempre, con palabras en inglés y una definición como pista. Un ejercicio pequeño para conectar la lógica de una partida con una API.",
+        "en": "A familiar game with English words and dictionary definitions as clues. A small project connecting game logic to an API."
+      },
+      "details": [
+        {
+          "heading": {
+            "es": "Si falla el diccionario",
+            "en": "When the dictionary is unavailable"
+          },
+          "body": {
+            "es": "Las palabras y definiciones se consultan en servicios externos. Hay una lista local de respaldo para que una caída de esas APIs no impida empezar una partida.",
+            "en": "External services supply the words and definitions. A local fallback list allows a game to start when those services are unavailable."
+          }
+        },
+        {
+          "heading": {
+            "es": "Qué se puede revisar",
+            "en": "What is available"
+          },
+          "body": {
+            "es": "El repositorio incluye el backend, la interfaz y pruebas de la lógica del juego.",
+            "en": "The repository includes the backend, interface and tests for the game logic."
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://github.com/jandortiz/the-hangman-game",
+          "label": {
+            "es": "Ver el proyecto",
+            "en": "View the project"
+          }
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "jeff-chef",
+      "name": "Jeff-Chef",
+      "group": "other",
+      "categories": [
+        "apps",
+        "ai"
+      ],
+      "status": "code",
+      "stack": [
+        "React",
+        "AWS Lambda",
+        "OpenAI"
+      ],
+      "description": {
+        "es": "Dime qué ingredientes tienes y buscamos una receta española que encaje. La interfaz recoge la lista y una función en AWS consulta el modelo.",
+        "en": "Start with the ingredients you have and get a Spanish recipe suggestion. The interface collects the list, and an AWS function sends it to the model."
+      },
+      "details": [
+        {
+          "heading": {
+            "es": "La integración",
+            "en": "The integration"
+          },
+          "body": {
+            "es": "React gestiona los ingredientes y presenta la receta. Una función en AWS Lambda hace la llamada a OpenAI, separada del código que recibe el navegador.",
+            "en": "React handles the ingredient list and displays the recipe. An AWS Lambda function calls OpenAI separately from the code delivered to the browser."
+          }
+        },
+        {
+          "heading": {
+            "es": "Qué esperar",
+            "en": "What to expect"
+          },
+          "body": {
+            "es": "La receta depende de la respuesta del modelo. El proyecto permite revisar la conexión entre la interfaz, la función en AWS y OpenAI.",
+            "en": "The recipe depends on the model’s response. The project shows how the interface, AWS function and OpenAI fit together."
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://github.com/jandortiz/Jeff-Chef",
+          "label": {
+            "es": "Ver el proyecto",
+            "en": "View the project"
+          }
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "emt-madrid",
+      "name": "EMT Madrid",
+      "group": "other",
+      "categories": [
+        "apps",
+        "data"
+      ],
+      "status": "code",
+      "stack": [
+        "Python",
+        "JavaScript",
+        "Leaflet"
+      ],
+      "description": {
+        "es": "Otra forma de mirar la movilidad en Madrid: estaciones de BiciMAD y paradas de autobús sobre un mapa.",
+        "en": "Another view of Madrid’s transport network: BiciMAD stations and bus stops on a map."
+      },
+      "details": [
+        {
+          "heading": {
+            "es": "El trabajo",
+            "en": "The work"
+          },
+          "body": {
+            "es": "Una exploración de datos de movilidad con mapas de calor e información asociada a estaciones y paradas. El código permite revisar cómo se conectan los datos y la visualización.",
+            "en": "An exploration of transport data through heatmaps and information attached to stations and stops. The code shows how the data connects to the visualisation."
+          }
+        },
+        {
+          "heading": {
+            "es": "Estado del enlace",
+            "en": "Where the link goes"
+          },
+          "body": {
+            "es": "Enlazo al repositorio; no presento una demo como servicio disponible.",
+            "en": "The link opens the repository. No live service is offered here."
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://github.com/jandortiz/EMT-Madrid-Webapp",
+          "label": {
+            "es": "Explorar el código",
+            "en": "Explore the code"
+          }
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "mascotas-madrid",
+      "name": "Mascotas en Madrid",
+      "group": "other",
+      "categories": [
+        "data"
+      ],
+      "status": "notebook",
+      "stack": [
+        "pandas",
+        "Seaborn",
+        "Matplotlib"
+      ],
+      "description": {
+        "es": "Un análisis exploratorio del censo de mascotas y las áreas caninas por distrito. El trabajo está en un notebook, con sus gráficos y pasos de análisis.",
+        "en": "An exploratory analysis of pet census data and dog areas across Madrid’s districts. The notebook contains the charts and the steps behind the analysis."
+      },
+      "details": [
+        {
+          "heading": {
+            "es": "Alcance",
+            "en": "Scope"
+          },
+          "body": {
+            "es": "Es una exploración descriptiva de los datos, no un modelo predictivo ni una aplicación web.",
+            "en": "This is descriptive data exploration, not a predictive model or a web application."
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.kaggle.com/code/jeffersongarciaor/eda-mascotas-de-compa-a-madrid",
+          "label": {
+            "es": "Leer el notebook",
+            "en": "Read the notebook"
+          }
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "california-housing",
+      "name": "California Housing",
+      "group": "other",
+      "categories": [
+        "data"
+      ],
+      "status": "notebook",
+      "stack": [
+        "pandas",
+        "NumPy",
+        "scikit-learn"
+      ],
+      "description": {
+        "es": "Un ejercicio de clustering con datos de vivienda de California: agrupar observaciones y examinar qué tienen en común.",
+        "en": "A clustering exercise using California housing data: grouping observations and looking at what they have in common."
+      },
+      "details": [
+        {
+          "heading": {
+            "es": "Alcance",
+            "en": "Scope"
+          },
+          "body": {
+            "es": "El notebook recoge el análisis. Los grupos son el resultado de una técnica de segmentación, no una valoración del mercado inmobiliario.",
+            "en": "The analysis is in the notebook. Its clusters are the output of a segmentation method, not a property valuation."
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.kaggle.com/code/jeffersongarciaor/californiahousingclustering",
+          "label": {
+            "es": "Leer el notebook",
+            "en": "Read the notebook"
+          }
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "jalt",
+      "name": "JALT",
+      "group": "other",
+      "categories": [
+        "apps"
+      ],
+      "status": "code",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "description": {
+        "es": "Un proyecto pequeño para el seguimiento de leads comerciales, hecho con HTML, CSS y JavaScript.",
+        "en": "A small sales lead tracking project built with HTML, CSS and JavaScript."
+      },
+      "details": [
+        {
+          "heading": {
+            "es": "Un alcance pequeño",
+            "en": "A small scope"
+          },
+          "body": {
+            "es": "El repositorio contiene la interfaz para seguir leads. Se puede revisar como un proyecto acotado de HTML, CSS y JavaScript.",
+            "en": "The repository contains the lead tracking interface: a small, self-contained HTML, CSS and JavaScript project."
+          }
+        }
+      ],
+      "links": [
+        {
+          "href": "https://github.com/jandortiz/jalt-Just-Another-Leads-Tracker",
+          "label": {
+            "es": "Ver el código",
+            "en": "View the code"
+          }
+        }
+      ],
+      "images": []
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Responsive review</title><style>body{margin:0;background:#858585}iframe{display:block;border:0;margin:auto;background:white}</style><iframe title="Portfolio responsive preview"></iframe><script>
+const params=new URLSearchParams(location.search);
+const width=Number(params.get('width'))||390;
+const frame=document.querySelector('iframe');
+frame.width=width;frame.height=1000;document.body.style.minWidth=width+'px';
+localStorage.setItem('jandortiz-theme',params.get('theme')==='dark'?'dark':'light');
+frame.src=(params.get('zoom')==='2'?'/__test__/zoom/':'/')+(params.get('lang')==='en'?'en/':'');
+frame.addEventListener('load',async()=>{
+ const doc=frame.contentDocument;
+ const images=[...doc.images].filter(image=>image.getAttribute('src'));
+ for(const image of images)image.loading='eager';
+ await Promise.all(images.map(image=>image.decode().catch(()=>{})));
+ await doc.fonts.ready;
+ frame.height=doc.documentElement.scrollHeight;
+ document.title=`${width}px ${params.get('lang')} ${params.get('theme')}`;
+ document.body.dataset.ready='true';
+});
+</script></html>

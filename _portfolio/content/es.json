@@ -1,0 +1,80 @@
+{
+  "title": "Jefferson Ortiz — Datos y software",
+  "tab_title": "jandortiz — Datos y software",
+  "description": "Aplicaciones, análisis de datos y proyectos de Jefferson Ortiz. Qué hacen, cómo están construidos y lo que todavía está en desarrollo.",
+  "skip": "Saltar al contenido",
+  "nav_label": "Navegación principal",
+  "projects_nav": "Proyectos",
+  "about_nav": "Sobre mí",
+  "contact_nav": "Contacto",
+  "language_label": "Idioma",
+  "theme_light": "Modo claro",
+  "theme_dark": "Modo oscuro",
+  "eyebrow": "Proyectos / Datos y software",
+  "hero_lines": [
+    "Trabajo con datos.",
+    "Desarrollo"
+  ],
+  "hero_accent": "aplicaciones.",
+  "intro": "Una aplicación para adaptar un CV, otra para registrar gastos, un mapa de trenes. Aquí puedes ver cómo funcionan los proyectos que desarrollo y qué hay detrás de cada uno.",
+  "browse": "Ver los proyectos",
+  "projects_title": "Una selección de mi trabajo",
+  "filters_label": "Filtrar proyectos",
+  "filter_all": "Todos",
+  "filter_data": "Datos",
+  "filter_apps": "Aplicaciones",
+  "filter_ai": "IA",
+  "singular": "proyecto",
+  "plural": "proyectos",
+  "empty": "No hay proyectos en esta categoría.",
+  "details": "Qué hay detrás",
+  "more_image": "Ver otra imagen",
+  "open_image": "Ampliar imagen de",
+  "visit_site": "Ir a la web de {name}",
+  "ongoing_title": "En lo que estoy trabajando",
+  "other_title": "Archivo de proyectos",
+  "about_eyebrow": "Sobre mí",
+  "about_title": "Primero, entender el problema.",
+  "about_paragraphs": [
+    "Trabajo en aplicaciones que conectan datos, APIs e interfaces. Aquí reúno proyectos de distinto alcance: desde una herramienta pequeña hasta una aplicación con procesos en segundo plano.",
+    "Me interesa que puedas ver qué he construido, pero también las decisiones que hay detrás y lo que todavía falta por resolver."
+  ],
+  "cv": "Consultar mi CV",
+  "work_notes": [
+    {
+      "heading": "Código que se pueda cambiar",
+      "body": "Separo responsabilidades cuando cambian por motivos distintos. Una abstracción tiene que resolver un problema que ya existe."
+    },
+    {
+      "heading": "Dejar rastro de las decisiones",
+      "body": "Documento lo que pruebo, por qué elijo una opción y qué queda pendiente. También cuando algo no sale como esperaba."
+    }
+  ],
+  "contact_eyebrow": "Contacto",
+  "contact_title": "Podemos hablar.",
+  "contact_text": "Si quieres comentar un proyecto o contarme en qué estás trabajando, escríbeme.",
+  "footer": "Proyectos personales. Trabajo en curso.",
+  "close": "Cerrar",
+  "close_label": "Cerrar visor",
+  "previous": "Imagen anterior",
+  "next": "Imagen siguiente",
+  "statuses": {
+    "local": "En desarrollo local",
+    "beta": "En pruebas cerradas",
+    "demo": "Demo disponible",
+    "academic": "Proyecto de máster",
+    "research": "Adquisición de datos",
+    "private": "Proyecto privado",
+    "code": "Código disponible",
+    "notebook": "Notebook"
+  },
+  "email_label": "Escríbeme",
+  "view_image": "Ver imagen del proyecto",
+  "archive_intro": "Más trabajos, a otra escala. Abre un proyecto para ver los detalles.",
+  "page_previous": "Anterior",
+  "page_next": "Siguiente",
+  "page_status": "Página {page} de {pages}",
+  "choose_page": "Ir a la página",
+  "pagination_label": "Páginas del archivo",
+  "new_tab": "abre aparte"
+}

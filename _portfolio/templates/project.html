@@ -1,0 +1,41 @@
+<article class="project{% if project.group != 'featured' %} project--small{% elif wide %} project--wide{% endif %}" id="{{ project.id }}" data-project data-categories="{{ project.categories | join(' ') }}">
+  {# A main image with a link opens the project's website; the capture stays in the viewer from the details. #}
+  {% set main_links_out = project.group == 'featured' and project.images[0].link is defined %}
+  {% if project.images and project.group == 'featured' %}
+  {% set first = project.images[0] %}
+  <figure>
+    {% if main_links_out %}
+    <a class="project-image" href="{{ first.link }}" target="_blank" rel="noopener noreferrer" aria-label="{{ t.visit_site | replace('{name}', project.name) }} ({{ t.new_tab }})">
+    {% else %}
+    <a class="project-image" href="/{{ first.src[lang] }}" data-gallery data-alt="{{ first.alt[lang] }}" data-caption="{{ first.caption[lang] }}" aria-label="{{ t.open_image }} {{ project.name }}">
+    {% endif %}
+      <img src="/{{ first.src[lang] }}" alt="{{ first.alt[lang] }}" width="{{ first.width }}" height="{{ first.height }}" {% if project.id == 'aplica' %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
+      <span class="zoom-mark" aria-hidden="true">↗</span>
+    </a>
+    <figcaption>{{ first.caption[lang] }}</figcaption>
+  </figure>
+  {% endif %}
+  <div class="project-copy">
+    <div class="project-heading">
+      <h3>{{ project.name }}</h3>
+      <span class="status">{{ t.statuses[project.status] }}</span>
+    </div>
+    <p class="project-description">{{ project.description[lang] }}</p>
+    <p class="stack">{{ project.stack | join(' · ') }}</p>
+    {% if project.links %}
+    <div class="project-links">
+      {% for link in project.links %}<a href="{{ link.href }}" target="_blank" rel="noopener noreferrer">{{ link.label[lang] }} <span aria-hidden="true">↗</span></a>{% endfor %}
+    </div>
+    {% endif %}
+    <details>
+      <summary>{{ t.details }}<span class="sr-only"> — {{ project.name }}</span></summary>
+      {% for detail in project.details %}
+      <h4>{{ detail.heading[lang] }}</h4>
+      <p>{{ detail.body[lang] }}</p>
+      {% endfor %}
+      {% for picture in (project.images[1:] if project.group == 'featured' and not main_links_out else project.images) %}
+      <a class="text-link" href="/{{ picture.src[lang] }}" data-gallery data-alt="{{ picture.alt[lang] }}" data-caption="{{ picture.caption[lang] }}">{{ t.more_image if project.group == 'featured' and not (main_links_out and loop.first) else t.view_image }} <span aria-hidden="true">↗</span></a>
+      {% endfor %}
+    </details>
+  </div>
+</article>

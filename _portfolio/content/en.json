@@ -1,0 +1,80 @@
+{
+  "title": "Jefferson Ortiz — Data & software",
+  "tab_title": "jandortiz — Data & software",
+  "description": "Applications, data analysis and projects by Jefferson Ortiz. What they do, how they are built, and what is still in progress.",
+  "skip": "Skip to content",
+  "nav_label": "Main navigation",
+  "projects_nav": "Projects",
+  "about_nav": "About",
+  "contact_nav": "Contact",
+  "language_label": "Language",
+  "theme_light": "Switch to light mode",
+  "theme_dark": "Switch to dark mode",
+  "eyebrow": "Projects / Data & software",
+  "hero_lines": [
+    "I work with data.",
+    "I build"
+  ],
+  "hero_accent": "applications.",
+  "intro": "An app to tailor a CV, another to track expenses, a map of live trains. Take a look at the projects I build, how they work and the decisions behind them.",
+  "browse": "Take a look at the projects",
+  "projects_title": "Selected work",
+  "filters_label": "Filter projects",
+  "filter_all": "All",
+  "filter_data": "Data",
+  "filter_apps": "Apps",
+  "filter_ai": "AI",
+  "singular": "project",
+  "plural": "projects",
+  "empty": "There are no projects in this category.",
+  "details": "A closer look",
+  "more_image": "View another image",
+  "open_image": "Enlarge image of",
+  "visit_site": "Visit the {name} website",
+  "ongoing_title": "On my desk",
+  "other_title": "Project archive",
+  "about_eyebrow": "About",
+  "about_title": "Start by understanding the problem.",
+  "about_paragraphs": [
+    "I build applications that connect data, APIs and interfaces. This collection ranges from small tools to applications with background processing.",
+    "Alongside what I have built, I want to share the choices behind it and the parts I have yet to figure out."
+  ],
+  "cv": "Read my CV",
+  "work_notes": [
+    {
+      "heading": "Code that leaves room for change",
+      "body": "I separate responsibilities when they change for different reasons. An abstraction needs to solve a problem that is already there."
+    },
+    {
+      "heading": "Keeping track of decisions",
+      "body": "I write down what I try, why I choose an approach and what remains unfinished. That includes the things that do not go as planned."
+    }
+  ],
+  "contact_eyebrow": "Contact",
+  "contact_title": "Let’s talk.",
+  "contact_text": "Have a question about a project, or something of your own to share? Send me a message.",
+  "footer": "Personal projects. A work in progress.",
+  "close": "Close",
+  "close_label": "Close image viewer",
+  "previous": "Previous image",
+  "next": "Next image",
+  "statuses": {
+    "local": "Local development",
+    "beta": "Closed beta",
+    "demo": "Live demo",
+    "academic": "Master’s thesis",
+    "research": "Data collection",
+    "private": "Private project",
+    "code": "Code available",
+    "notebook": "Notebook"
+  },
+  "email_label": "Email me",
+  "view_image": "View project image",
+  "archive_intro": "More work, on a different scale. Open a project to take a closer look.",
+  "page_previous": "Previous",
+  "page_next": "Next",
+  "page_status": "Page {page} of {pages}",
+  "choose_page": "Go to page",
+  "pagination_label": "Archive pages",
+  "new_tab": "opens separately"
+}
